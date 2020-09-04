@@ -16,6 +16,31 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `admin_login`
+--
+
+DROP TABLE IF EXISTS `admin_login`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `admin_login` (
+  `admin_id` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(200) NOT NULL,
+  `password` varchar(200) NOT NULL,
+  PRIMARY KEY (`admin_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `admin_login`
+--
+
+LOCK TABLES `admin_login` WRITE;
+/*!40000 ALTER TABLE `admin_login` DISABLE KEYS */;
+INSERT INTO `admin_login` VALUES (1,'admin','mamba'),(2,'admin123','admin');
+/*!40000 ALTER TABLE `admin_login` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `student_management`
 --
 
@@ -58,4 +83,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-09-04 14:00:56
+-- Dump completed on 2020-09-04 14:46:58
